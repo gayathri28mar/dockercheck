@@ -13,7 +13,7 @@ spec:
         app: ContainerApp
     spec:
       containers:
-      - name: aksg3cr
+      - name: samplekc
         image: g3crsample.azurecr.io/g3crsample:latest
         ports:
         - containerPort: 8080
