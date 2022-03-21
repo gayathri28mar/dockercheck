@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: containerapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ContainerApp
+  template:
+    metadata:
+      labels:
+        app: ContainerApp
+    spec:
+      containers:
+      - name: aksg3cr
+        image: g3crsample.azurecr.io/g3crsample:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: dsconfigsn
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: containerapp
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: ContainerApp
