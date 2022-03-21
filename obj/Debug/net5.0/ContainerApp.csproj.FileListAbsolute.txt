@@ -26,3 +26,4 @@ C:\Users\gayat\OneDrive\Desktop\Deploy\ContainerApp\obj\Debug\net5.0\ContainerAp
 C:\Users\gayat\OneDrive\Desktop\Deploy\ContainerApp\obj\Debug\net5.0\ref\ContainerApp.dll
 C:\Users\gayat\OneDrive\Desktop\Deploy\ContainerApp\obj\Debug\net5.0\ContainerApp.pdb
 C:\Users\gayat\OneDrive\Desktop\Deploy\ContainerApp\obj\Debug\net5.0\ContainerApp.genruntimeconfig.cache
+C:\Users\gayat\OneDrive\Desktop\Deploy\ContainerApp\bin\Debug\net5.0\deploy.yaml

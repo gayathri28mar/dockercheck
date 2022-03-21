@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: samplekc
-        image: g3crsample.azurecr.io/crg3:latest
+        image: g3crsample.azurecr.io/g3crsample:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
