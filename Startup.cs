@@ -27,6 +27,13 @@ namespace ContainerApp
         {
 
             services.AddControllers();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("myPolicy", policy =>
+                {
+                    policy.AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin();
+                });
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ContainerApp", Version = "v1" });
@@ -44,7 +51,7 @@ namespace ContainerApp
             }
 
             app.UseRouting();
-
+            app.UseCors("myPolicy");
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
