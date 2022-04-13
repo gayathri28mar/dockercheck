@@ -13,8 +13,8 @@ spec:
         app: ContainerApp
     spec:
       containers:
-      - name: crg3
-        image: g3crsample.azurecr.io/crg3:latest
+      - name: crdockercheck
+        image: csampleg3.azurecr.io/crdockercheck:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
